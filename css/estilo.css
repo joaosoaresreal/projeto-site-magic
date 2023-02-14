@@ -50,10 +50,10 @@ body>header{ /*vai formatar somente o header filho do body*/
 .bannerTitle{
     background-image: url('../img/titulo_banner.png');
     width: 490px;
-    height: 160px;
+    height: 150px;
     position: absolute;
-    right: 890px;
-    bottom: 250px;
+    right: 1220px;
+    bottom: 450px;
     
 
     /*background-color: royalblue;*/
@@ -73,11 +73,12 @@ body>header{ /*vai formatar somente o header filho do body*/
 .bannerTitle a{
     text-decoration: none;
     color: #FFF;
-    font-weight: 700;
+    font-weight: bold;
     border: 2px solid #FFF; /*borda do icone*/
     background-color: #C86C2D;
     padding: 15px; /*espaçamento interno do icone*/
     border-radius: 5%; /*arredondamento dos cantos da borda*/
+    margin-top: 20px;
     margin-right: 100px;
     margin-left: 210px;
 }
@@ -88,9 +89,16 @@ body>header{ /*vai formatar somente o header filho do body*/
 \*****************************************/
 .nossosJogos{
     background-image: url('../img/bg-nossos-jogos.jpg'); /*colocar a imagem pelo css para poder sobrepor ela*/
+    width: 100%;
     padding: 100px;
 }
 
+.artigos article{
+    background-color: #FFF;
+    height: 400px;
+    width: 300px;
+    flex-direction:column;
+}
 
 .nossosJogos h1{
     text-align: center;
@@ -107,8 +115,8 @@ body>header{ /*vai formatar somente o header filho do body*/
 .artigos a{
     color: #EA3601;
     text-decoration: none;
-
-    
+    text-align: center;
+    align-items: center;
 }
 
 .artigos{
@@ -117,28 +125,30 @@ body>header{ /*vai formatar somente o header filho do body*/
     gap: 20px;
 }
 
-.artigos article{
-    background-color: #FFF;
-    padding-bottom: 70px;
-}
+
 
 /*****************************************\
                 RODAPÉ
 \*****************************************/
+
+.rodape{
+    align-items: center;
+}
+
 .informacao{
     background-color: #000;
     padding: 100px;
     font-size: 12px;
 }
 
-.informacao article, .informacao a{
+.informacao article, .informacao a, .icons{
     color: #fff;
     text-decoration: none;
 }
 
-.informacao article{
+.informacao article, .icons{
     display: inline-table;
-    padding-right: 120px;
+    padding-right: 200px;
 }
 
 .informacao a{
@@ -146,11 +156,25 @@ body>header{ /*vai formatar somente o header filho do body*/
     padding-top: 10px;
 }
 
+.icons{
+    display: flex;
+}
+
+/*
 .informacao img{
+    height: 50px;
+    background-color: #43484F;
+    padding: 20px; /*espaçamento interno do icone*
+    border-radius: 50%;
+}
+*/
+
+.icons img{
     height: 50px;
     background-color: #43484F;
     padding: 20px; /*espaçamento interno do icone*/
     border-radius: 50%;
+    
 }
 
 .logos{
@@ -160,9 +184,10 @@ body>header{ /*vai formatar somente o header filho do body*/
 .logos img{
     display: inline-table;
     position: relative; /*faz ele aceitar o distanciamento*/
-    left: 880px;
+    left: 1180px;
     align-items: baseline;
     bottom: 50px;
+    padding: 20px;
 }
 
 .suporte{
