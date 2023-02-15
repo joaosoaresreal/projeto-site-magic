@@ -93,18 +93,25 @@ body>header{ /*vai formatar somente o header filho do body*/
     padding: 100px;
 }
 
-.artigos article{
-    background-color: #FFF;
-    height: 400px;
-    width: 300px;
-    flex-direction:column;
-}
-
 .nossosJogos h1{
     text-align: center;
     text-transform: uppercase;
     padding-bottom: 40px;
     font-weight: 900;
+}
+
+.artigos{
+    width: 100%;
+    gap: 20px;
+    display: flex; /*deixa os 'cards' um ao lado do outro*/
+    justify-content: center;
+}
+
+.artigos article{
+    background-color: #FFF;
+    height: 400px;
+    width: 300px;
+    flex-direction: column;
 }
 
 .artigos p, .artigos h2{
@@ -115,16 +122,10 @@ body>header{ /*vai formatar somente o header filho do body*/
 .artigos a{
     color: #EA3601;
     text-decoration: none;
-    text-align: center;
     align-items: center;
-}
+    
 
-.artigos{
-    display: flex; /*deixa os 'cards' um ao lado do outro*/
-    justify-content: center;
-    gap: 20px;
 }
-
 
 
 /*****************************************\
@@ -139,42 +140,28 @@ body>header{ /*vai formatar somente o header filho do body*/
     background-color: #000;
     padding: 100px;
     font-size: 12px;
+    display: flex;
 }
 
-.informacao article, .informacao a, .icons{
+.informacao article{
     color: #fff;
-    text-decoration: none;
-}
-
-.informacao article, .icons{
+    padding-right: 130px;
+    padding-left: 130px;
     display: inline-table;
-    padding-right: 200px;
 }
 
 .informacao a{
     display: flex;
     padding-top: 10px;
+    text-decoration: none;
+    color: #fff;
 }
 
-.icons{
-    display: flex;
-}
-
-/*
 .informacao img{
-    height: 50px;
-    background-color: #43484F;
-    padding: 20px; /*espaçamento interno do icone*
-    border-radius: 50%;
-}
-*/
-
-.icons img{
     height: 50px;
     background-color: #43484F;
     padding: 20px; /*espaçamento interno do icone*/
     border-radius: 50%;
-    
 }
 
 .logos{
